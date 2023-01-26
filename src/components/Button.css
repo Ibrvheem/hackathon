@@ -1,0 +1,54 @@
+.button-blue a{
+    background-color: #0070C0;    
+    border-radius: 4px;
+    font-size: 1.5em;
+    padding: 1rem 4rem;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all ease-out .2s;
+}
+.button-blue a:hover{
+    color: #0070C0;   
+    border: 0.2rem solid #0070C0;
+    background-color: white; 
+    padding: 0.5rem 4rem;
+    font-size: 2.0rem;
+    box-shadow: 1rem 1rem 11.5rem -1.3rem rgba(0,0,0,0.75);
+}
+.button-darkBlue a{
+    background-color: #012A47;  
+    font-size: 1.6rem;  
+    border-radius: 0.4rem;
+    padding: 1rem 4rem;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all ease-out .2s;
+}
+.button-darkBlue a:hover{
+    color: #012A47;   
+    border: 0.2rem solid #012A47;
+    background-color: white; 
+    padding: 0.5rem 4rem;
+    font-size: 1.8rem;
+    box-shadow: 1rem 1rem 11.5rem -1.3rem rgba(0,0,0,0.75);    transition: all ease-in-out .2s;
+}
+.button-white a{
+    background-color: white; 
+    font-size: 1.6rem;   
+    border-radius: 0.4rem;
+    padding: 1.5rem 6rem;
+    color: #0070C0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all ease-out .2s;
+}
+.button-white a:hover{
+    color: white;   
+    border: 0.2rem solid white;
+    background-color: #0070C0; 
+    padding: 0.7rem 4.5rem;
+    font-size: 1.8rem;
+    box-shadow: 1re 1rem 11.5rem -1.3rem rgba(0,0,0,0.75);    transition: all ease-in-out .2s;
+}

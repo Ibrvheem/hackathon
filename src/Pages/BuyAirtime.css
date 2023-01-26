@@ -1,0 +1,56 @@
+.welcome--user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.welcome--user img{
+    background-color: gray;
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: center;
+}
+.home--container{
+    width: 85vw;
+    height: 50vh;
+    /* background-color: aqua ; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+    flex-direction: column;
+    gap: 3rem;
+}
+.options{
+    display: flex;  
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 100%;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 3rem;
+    font-size: .8rem;
+}
+.activity-log li{
+    list-style: none;
+    border: 1px solid grey;
+    padding: 1rem 3rem;
+    margin-bottom: 2rem;
+}
+/* .l input{
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    height: 3rem;
+    padding-left: 1rem  ;
+    border-radius: 3rem;
+    border: none;
+    margin-bottom: 3rem;
+}
+.login--form input::placeholder{
+    color: white;
+} */
