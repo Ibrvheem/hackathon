@@ -14,7 +14,7 @@ function SignIn() {
             <Link to = '/Home'>
                 <Button style ='button-white' text = 'Sign in' link = '/Home'/>
             </Link>
-            <h5 style={{textAlign:'left', marginTop: '1rem'}}><a href="">DONT HAVE AN ACCOUNT?</a></h5>
+            <h5 style={{textAlign:'left', marginTop: '1rem'}}></h5>
         </form>
     </div>
   )

@@ -1,0 +1,30 @@
+.sell--container{
+    width: 85vw;
+    /* height: 100vh; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+    flex-direction: column;
+    gap: 3rem;
+    
+}
+.sell--container ul img{
+    border-radius: 50px;
+    background-color: gray;
+    object-fit: contain;
+    object-position: center;
+}
+.sell--container ul{
+    border: 1px solid white;
+    text-align: left;
+    width: 100%;
+    border-radius: 5px;
+
+    /* height: 2rem; */
+    
+    padding: 1rem 2rem;
+    list-style: none;
+    font-size: 2rem;
+
+}

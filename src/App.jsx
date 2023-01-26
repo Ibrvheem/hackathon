@@ -23,7 +23,6 @@ export default function App() {
               <Route exact path="/Sell" element={<Sell/>} />
             </Routes>
       </div>
-    {/* </div> */}
   </Router>
 
   )

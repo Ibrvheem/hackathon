@@ -32,7 +32,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    gap: 3rem;
+    gap: .5rem;
     font-size: .8rem;
 }
 .activity-log li{
@@ -45,9 +45,9 @@
     background: gray;
     display: flex;
     flex-direction: column;
-    height: 3rem;
+    height: 4rem;
     padding-left: 1rem  ;
-    border-radius: 3rem;
+    border-radius: 1rem;
     border: none;
     margin-bottom: 3rem;
 }

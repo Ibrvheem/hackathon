@@ -4,6 +4,7 @@ import Swal from 'sweetalert2'
 
 
 import './Wallet.css'
+import { Link } from 'react-router-dom'
 function Wallet() {
     function alert(){
         Swal.fire({
@@ -29,8 +30,13 @@ function Wallet() {
   return (
     <div>
         <div className="wallet--container">
+        <Link to = '/Home' style={{marginRight:'auto'}}>
+                <img src="./Images/arrow-left-solid.svg" style={{height:'2rem', marginRight: 'auto'}} alt="" />
+            </Link>
+
+
             <div className="welcome--user">
-                <h1 style={{textAlign:'center', width:'100%'}}>FUND WALLETX   </h1>
+                <h1 style={{textAlign:'center', width:'100%'}}>FUND WALLET   </h1>
 
             </div>
 
