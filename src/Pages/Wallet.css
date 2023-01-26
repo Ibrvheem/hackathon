@@ -1,0 +1,16 @@
+.wallet--container{
+    width: 85vw;
+    height: 100vh;
+    background-color: aqua ;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+    flex-direction: column;
+    gap: 3rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem   ;
+}
