@@ -5,7 +5,7 @@ import Button from '../components/Button'
 function BuyAirtime() {
   return (
     <div>
-        <div className="home--container">
+        <div className="buyAirtime--container">
             <div className="welcome--user">
                 <h1 style={{textAlign:'center', width:'100%'}}>BUY AIRTIME</h1>
                 {/* <img src="" height='50rem' width= '50rem'alt="" /> */}
@@ -15,12 +15,12 @@ function BuyAirtime() {
                 </div> */}
             <div className="options">
                 <div className="buttons ">
-                    <Button text ='FROM US' style = 'button-blue'/>
-                    <Button text = 'WAITLIST' style= 'button-blue'/>
+                    <Button text ='DIRECT' link = '/FromUs' style = 'button-white'/>
+                    <Button text = 'INDIRECT' link = '/Waitlist' style= 'button-white'/>
                 </div>
             </div>
             {/* <div className="wallet">
-                <Button text = 'Fund Wallet' style = 'button-blue'/>
+                <Button text = 'Fund Wallet' style = 'button-white'/>
             </div>
             <div className="activity-log">
                 <ul>

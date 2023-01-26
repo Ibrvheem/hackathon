@@ -8,7 +8,10 @@
     flex-direction: column;
     gap: 3rem;
 }
-.login--form input{
+form h5{
+    text-align: right;
+}
+input{
     background: gray;
     display: flex;
     flex-direction: column;
@@ -16,8 +19,9 @@
     padding-left: 1rem  ;
     border-radius: 3rem;
     border: none;
-    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
-.login--form input::placeholder{
+input::placeholder{
     color: white;
 }
+

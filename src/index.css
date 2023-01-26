@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #0070C0;
+  color: white;
 }
 html{
   font-size: 62.5%;
