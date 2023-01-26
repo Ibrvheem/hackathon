@@ -1,14 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from '../components/Button'
 import Swal from 'sweetalert2'
+
 import { Link } from 'react-router-dom';
 import './FromUs.css'
+import { API_URL } from '../constants/apiConstants';
+import axios from 'axios';
 
 
 function FromUs() {
-    function alert(){
+
+  const [phone, setPhone] = useState("")
+  const [unit, setUnit] = useState("")
+  const token = localStorage.getItem('token')
+
+  const doSubmit = () => {
+    axios({
+        url:API_URL+'/airtime',
+        method:'post',
+        headers:{'Content-Type':'application/json', 'Authorization':'Bearer '+token},
+        data: {type:'direct', phone_number:phone, unit:parseInt(unit)}
+    }).then((response) =>{
+      alert(response.data.message);
+      // navigate("/home");
+    })
+}
+    function alert(message){
         Swal.fire({
-            title:'SUCCESS',
+            title:message,
             showCancelButton: true,
             confirmButtonText: 'GO TO HOMEPAGE!',
             cancelButtonText: 'RETRY',
@@ -39,9 +58,9 @@ function FromUs() {
 
             </div>
             <form action="" className='login--form'>
-                <input type = 'text' placeholder = 'Enter Amount' />
-                <input type = 'password' placeholder = 'Enter Number'/>
-                <Button style ='button-white' text = 'Proceed' handleClick = {alert}/>
+                <input type = 'text' placeholder = 'Enter Amount' value={unit} onChange={(e)=>{setUnit(e.target.value)}}/>
+                <input type = 'phone' placeholder = 'Enter Number' value={phone} onChange={(e)=>{setPhone(e.target.value)}}/>
+                <Button style ='button-white' text = 'Proceed' handleClick = {doSubmit}/>
             </form>
 
 

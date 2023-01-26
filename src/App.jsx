@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import SignIn from './Pages/SignIn';
+import SignUp from './Pages/SignUp';
 import Home from './Pages/Home';
 import BuyAirtime from './Pages/BuyAirtime';
 import FromUs from './Pages/FromUs';
@@ -15,6 +16,7 @@ export default function App() {
       <div className="App">
             <Routes>
               <Route exact path="/" element={<SignIn/>} />
+              <Route exact path="/Signup" element={<SignUp/>} />
               <Route exact path="/Home" element={<Home/>} />
               <Route exact path="/BuyAirtime" element={<BuyAirtime/>} />
               <Route exact path="/FromUs" element={<FromUs/>} />

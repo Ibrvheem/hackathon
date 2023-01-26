@@ -1,13 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from '../components/Button'
 import Swal from 'sweetalert2'
 import { Link } from 'react-router-dom'
+import { API_URL } from '../constants/apiConstants';
+import axios from 'axios';
 
 
 function Waitlist() {
-    function alert(){
+
+  const [phone, setPhone] = useState("")
+  const [unit, setUnit] = useState("")
+  const token = localStorage.getItem('token')
+
+  const doSubmit = () => {
+    axios({
+        url:API_URL+'/airtime',
+        method:'post',
+        headers:{'Content-Type':'application/json', 'Authorization':'Bearer '+token},
+        data: {type:'indirect', phone_number:phone, unit:parseInt(unit)}
+    }).then((response) =>{
+      alert(response.data.message);
+      // navigate("/home");
+    })
+}
+    function alert(message){
         Swal.fire({
-            title:'YOUR REQUEST HAS BEEN RECEIVED',
+            title:message? message:'Success',
             showCancelButton: true,
             confirmButtonText: 'GO TO HOMEPAGE!',
             cancelButtonText: 'RETRY',
@@ -25,6 +43,7 @@ function Waitlist() {
           })
 
     }
+
   return (
     <div>
         <div className="home--container">
@@ -33,14 +52,13 @@ function Waitlist() {
             </Link>
 
             <div className="welcome--user">
-                <h1 style={{textAlign:'center', width:'100%'}}>FROM WAITLIST</h1>
+                <h1 style={{textAlign:'center', width:'100%'}}>FROM US  </h1>
 
             </div>
             <form action="" className='login--form'>
-                <input type = 'text' placeholder = 'Enter Amount' />
-                <input type = 'password' placeholder = 'Enter Number'/>
-                <Button style ='button-white' text = 'Proceed' handleClick = {alert}
-             />
+                <input type = 'text' placeholder = 'Enter Amount' value={unit} onChange={(e)=>{setUnit(e.target.value)}}/>
+                <input type = 'phone' placeholder = 'Enter Number' value={phone} onChange={(e)=>{setPhone(e.target.value)}}/>
+                <Button style ='button-white' text = 'Proceed' handleClick = {doSubmit}/>
             </form>
 
 
