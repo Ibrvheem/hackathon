@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Button from '../components/Button'
 import Swal from 'sweetalert2'
+import { Link } from 'react-router-dom'
 import { API_URL } from '../constants/apiConstants';
 import axios from 'axios';
 
@@ -46,6 +47,10 @@ function Waitlist() {
   return (
     <div>
         <div className="home--container">
+        <Link to = '/Home' style={{marginRight:'auto'}}>
+                <img src="./Images/arrow-left-solid.svg" style={{height:'2rem', marginRight: 'auto'}} alt="" />
+            </Link>
+
             <div className="welcome--user">
                 <h1 style={{textAlign:'center', width:'100%'}}>FROM US  </h1>
 

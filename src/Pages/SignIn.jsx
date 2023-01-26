@@ -33,6 +33,7 @@ function SignIn() {
             <h5><a href=''>Forgot password?</a></h5>
             <button className='button-white' onClick={(e)=>{e.preventDefault(); doSubmit()}} >Sign In</button>
             <h5 style={{textAlign:'left', marginTop: '1rem'}}><a href="/Signup">DONT HAVE AN ACCOUNT?</a></h5>
+
         </form>
     </div>
   )

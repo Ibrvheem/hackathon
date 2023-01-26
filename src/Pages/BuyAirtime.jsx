@@ -1,11 +1,15 @@
 import React from 'react'
 import './BuyAirtime.css'
 import Button from '../components/Button'
+import { Link } from 'react-router-dom'
 
 function BuyAirtime() {
   return (
     <div>
         <div className="buyAirtime--container">
+        <Link to = '/Home' style={{marginRight:'auto'}}>
+                <img src="./Images/arrow-left-solid.svg" style={{height:'2rem', marginRight: 'auto'}} alt="" />
+            </Link>
             <div className="welcome--user">
                 <h1 style={{textAlign:'center', width:'100%'}}>BUY AIRTIME</h1>
                 {/* <img src="" height='50rem' width= '50rem'alt="" /> */}

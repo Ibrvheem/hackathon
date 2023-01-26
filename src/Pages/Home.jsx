@@ -40,7 +40,7 @@ function Home() {
                 </div>
             </div>
             <div className="wallet">
-                <Button text = 'Fund Wallet' style = 'button-white'/>
+                <Button text = 'Fund Wallet'link = '/Wallet' style = 'button-white'/>
             </div>
             <div className="activity-log">
                 <ul>
